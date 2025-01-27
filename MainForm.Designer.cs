@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             tabControl = new TabControl();
             TaskList = new TabPage();
             DeleteButton = new Button();
@@ -195,8 +196,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(784, 461);
             Controls.Add(tabControl);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "MainForm";
-            Text = "Form1";
+            Text = "ToDoList";
             FormClosed += MainForm_FormClosed;
             tabControl.ResumeLayout(false);
             TaskList.ResumeLayout(false);
