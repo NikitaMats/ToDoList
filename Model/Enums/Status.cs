@@ -11,8 +11,8 @@ namespace ToDoList.Model.Enums
     /// </summary>
     public enum Status
     {
-        Done,
+        InPlans,
         InProgress,
-        InPlans
+        Done
     }
 }

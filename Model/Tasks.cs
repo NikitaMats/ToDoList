@@ -11,7 +11,7 @@ namespace ToDoList.Model
     /// <summary>
     /// Класс отвечающий за хранение данных о задачах.
     /// </summary>
-    internal class Task
+    internal class Tasks
     {
         /// <summary>
         /// Id задачи.
@@ -46,7 +46,7 @@ namespace ToDoList.Model
         /// <summary>
         /// Создаёт экземпляр класса <see cref="Student"/>.
         /// </summary>
-        public Task()
+        public Tasks()
         {
             _allTaskCount++;
             _id = _allTaskCount;
@@ -63,7 +63,7 @@ namespace ToDoList.Model
         public Status TaskStatus { get; set; }
 
         /// <summary>
-        /// Возвращает и задаёт имя студента. Длинна не должна превышать 200 символов.
+        /// Возвращает и задаёт имя задачи. Длинна не должна превышать 30 символов.
         /// </summary>
         public string Name
         {
@@ -73,13 +73,13 @@ namespace ToDoList.Model
             }
             set
             {
-                Validator.AssertCountSymbolsInRange(nameof(Name), 0, 20, value);
+                Validator.AssertCountSymbolsInRange(nameof(Name), 1, 30, value);
                 _name = value;
             }
         }
 
         /// <summary>
-        /// Возвращает и задаёт описание задачи. Длинна не должна превышать 10 символов.
+        /// Возвращает и задаёт описание задачи. Длинна не должна превышать 1000 символов.
         /// </summary>
         public string Description
         {
@@ -89,7 +89,7 @@ namespace ToDoList.Model
             }
             set
             {
-                Validator.AssertCountSymbolsInRange(nameof(Description), 0, 0, value);
+                Validator.AssertCountSymbolsInRange(nameof(Description), 0, 1000, value);
                 _description = value;
             }
         }
@@ -101,19 +101,19 @@ namespace ToDoList.Model
         {
             get
             {
-                return _description;
+                return _executor;
             }
             set
             {
-                Validator.AssertCountSymbolsInRange(nameof(Description), 0, 15, value);
-                _description = value;
+                Validator.AssertCountSymbolsInRange(nameof(Executor), 0, 15, value);
+                _executor = value;
             }
         }
 
         /// <summary>
         /// Создаёт экземпляр класса <see cref="Student"/>.
         /// </summary>
-        public Task(string name, string description, Status taskStatus, string executor)
+        public Tasks(string name, string description, Status taskStatus, string executor)
         {
             Name = name;
             Description = description;
