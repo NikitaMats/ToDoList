@@ -81,7 +81,7 @@
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(535, 381);
+            DeleteButton.Location = new Point(597, 381);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(161, 38);
             DeleteButton.TabIndex = 10;
@@ -91,7 +91,7 @@
             // 
             // AddButton
             // 
-            AddButton.Location = new Point(364, 381);
+            AddButton.Location = new Point(426, 381);
             AddButton.Name = "AddButton";
             AddButton.Size = new Size(161, 38);
             AddButton.TabIndex = 9;
@@ -102,7 +102,7 @@
             // StatusComboBox
             // 
             StatusComboBox.FormattingEnabled = true;
-            StatusComboBox.Location = new Point(222, 396);
+            StatusComboBox.Location = new Point(284, 396);
             StatusComboBox.Name = "StatusComboBox";
             StatusComboBox.Size = new Size(130, 23);
             StatusComboBox.TabIndex = 8;
@@ -111,7 +111,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(222, 381);
+            label4.Location = new Point(284, 381);
             label4.Name = "label4";
             label4.Size = new Size(67, 15);
             label4.TabIndex = 7;
@@ -119,7 +119,7 @@
             // 
             // DescriptionTextBox
             // 
-            DescriptionTextBox.Location = new Point(220, 75);
+            DescriptionTextBox.Location = new Point(282, 75);
             DescriptionTextBox.Multiline = true;
             DescriptionTextBox.Name = "DescriptionTextBox";
             DescriptionTextBox.Size = new Size(476, 294);
@@ -129,7 +129,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(220, 60);
+            label3.Location = new Point(282, 60);
             label3.Name = "label3";
             label3.Size = new Size(70, 15);
             label3.TabIndex = 5;
@@ -138,7 +138,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(466, 10);
+            label2.Location = new Point(528, 10);
             label2.Name = "label2";
             label2.Size = new Size(56, 15);
             label2.TabIndex = 4;
@@ -146,7 +146,7 @@
             // 
             // ExecutorTextBox
             // 
-            ExecutorTextBox.Location = new Point(466, 25);
+            ExecutorTextBox.Location = new Point(528, 25);
             ExecutorTextBox.Name = "ExecutorTextBox";
             ExecutorTextBox.Size = new Size(230, 23);
             ExecutorTextBox.TabIndex = 3;
@@ -154,7 +154,7 @@
             // 
             // NameTextBox
             // 
-            NameTextBox.Location = new Point(220, 25);
+            NameTextBox.Location = new Point(282, 25);
             NameTextBox.Name = "NameTextBox";
             NameTextBox.Size = new Size(230, 23);
             NameTextBox.TabIndex = 2;
@@ -163,7 +163,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(220, 10);
+            label1.Location = new Point(282, 10);
             label1.Name = "label1";
             label1.Size = new Size(42, 15);
             label1.TabIndex = 1;
@@ -176,7 +176,7 @@
             TaskListBox.ItemHeight = 15;
             TaskListBox.Location = new Point(10, 10);
             TaskListBox.Name = "TaskListBox";
-            TaskListBox.Size = new Size(200, 409);
+            TaskListBox.Size = new Size(225, 409);
             TaskListBox.TabIndex = 0;
             TaskListBox.SelectedIndexChanged += TaskListBox_SelectedIndexChanged;
             // 
